@@ -1,0 +1,646 @@
+.button {
+    width: 50px;
+    height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+    color: rgb(8, 72, 8);
+    background-color: rgb(89, 173, 89);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    clip-path: ellipse(50% 41% at 50% 50%);
+    shape-outside: ellipse(50% 41% at 50% 50%);
+}
+.button:hover {
+    background-color: rgb(210, 208, 90);
+}
+/* page 1 */
+.text {
+    width: 90vw;
+    min-height: 70px;
+    max-height: 150px;
+    overflow: scroll;
+    font-size: 25px;
+    background-color: rgba(255, 243, 243, 0.612);
+    color: rgb(17, 53, 18);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#title {
+    width: 800px;
+    height: 200px;
+    font-size: 100px;
+    color: rgb(26, 88, 28);
+}
+#end {
+    width: 600px;
+    height: 200px;
+    font-size: 150px;
+    color: rgb(24, 98, 27);
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#bgtitle {
+    background-color: rgb(124, 215, 124);
+}
+#bgend {
+    background-color: rgb(124, 215, 124);
+}
+/* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; */
+#bg1 {
+    background-image: url("goldilocks-forest-ef48d217dc8e23a49277afc4dcf403c3");
+}
+#bg2 {
+    background-image: url("goldilocks-first-floor2-istockphoto-1271311692-612x612.jpg");
+}
+#bg3 {
+    background-image: url("goldilocks-second-floor-empty-room-with-window-vector.jpg");
+}
+.house {
+    width: 500px;
+    height: 500px;
+    background-image: url("transparent-cartoon-house-yellow-house-1711023010658-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#house1 {
+    transform: translate(100px,50px);
+}
+.bbybear {
+    width: 170px;
+    height: 170px;
+    background-image: url("baby-bear-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bb1 {
+    transform: translate(150px,-250px);
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+#bb2 {
+    transform: translate(480px, -100px);
+
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes bbybearfadeout {
+    75% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(650px, -150px);
+    }
+}
+#bb3 {
+    transform: translate(550px, -50px);
+
+    animation-name: bbybearfadeout;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(550px, -50px); */
+@keyframes bbybearfadein {
+    0% {
+        opacity: 100;
+    }
+    100% {
+        transform: translate(550px, -50px);
+        opacity: 100;
+    }
+}
+#bb4 {
+    transform: translate(650px, -150px);
+    opacity: 0;
+
+    animation-name: bbybearfadein;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes babybearbed {
+    100% {
+        transform: translate(750px, -1400px);
+    }
+}
+#bb5 {
+    transform: translate(220px, -1510px);
+
+    animation-name: babybearbed;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(750px, -1600px); -200*/
+.mombear {
+    width: 250px;
+    height: 250px;
+    background-image: url("mom-bear-clip-art-hand-drawn-vector-600nw-2451623865-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#mb1 {
+    transform: translate(300px, -400px);
+}
+#mb2 {
+    transform: translate(600px, -300px);
+
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes mombearfadeout {
+    75% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(700px, -350px);
+    }
+}
+#mb3 {
+    transform: translate(460px, -380px);
+
+    animation-name: mombearfadeout;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(460px, -380px) */
+@keyframes mombearfadein {
+    0% {
+        opacity: 100;
+    }
+    100% {
+        transform: translate(460px, -380px);
+        opacity: 100;
+    }
+}
+#mb4 {
+    transform: translate(700px, -360px);
+    opacity: 0;
+
+    animation-name: mombearfadein;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes mombearbed {
+    100% {
+        transform: translate(600px, -1250px);
+    }
+}
+#mb5 {
+    transform: translate(250px, -1320px);
+
+    animation-name: mombearbed;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(600px, -1450px); */
+.dadbear {
+    width: 250px;
+    height: 250px;
+    background-image: url("dad-bear-clip-art-hand-drawn-vector-600nw-2451623865-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#db1 {
+    transform: translate(500px, -650px);
+}
+#db2 {
+    transform: translate(300px, -550px);
+
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes dadbearfadeout {
+    75% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(640px, -580px);
+    }
+}
+#db3 {
+    transform: translate(280px, -580px);
+
+    animation-name: dadbearfadeout;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(280px, -580px); */
+
+@keyframes dadbearfadein {
+    0% {
+        opacity: 100;
+    }
+    100% {
+        transform: translate(280px, -580px);
+        opacity: 100;
+    }
+}
+#db4 {
+    transform: translate(640px, -580px);
+    opacity: 0;
+
+    animation-name: dadbearfadein;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes dadbearbed {
+    100%{
+        transform: translate(400px, -1050px);
+    }
+}
+#db5 {
+    width: 200px;
+    height: 200px;
+    transform: translate(230px, -1100px);
+
+    animation-name: dadbearbed;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(400px, -1250px); */
+.goldilocksstand2 {
+    width: 200px;
+    height: 400px;
+    background-image: url("goldilocks-standing-face-right-a456be10675757.560e8f0c10287-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#gtitle {
+    transform: translate(0px, 50px);
+}
+@keyframes goldigoinginside1 {
+    0% {
+        opacity: 100;
+    }
+    100% {
+        transform: translate(450px, -850px);
+        opacity: 100;
+    }
+}
+#g2 {
+    transform: translate(700px, -900px);
+    opacity: 0;
+
+    animation-name: goldigoinginside1;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+/* transform: translate(450px, -850px); */
+#g3 {
+    transform: translate(450px, -150px);
+}
+@keyframes goldigoinginside2 {
+    50% {
+        opacity: 100;
+    }
+    100% {
+        transform: translate(400px, -1450px);
+        opacity: 0;
+    }
+}
+#g4 {
+    width: 150px;
+    height: 250px;
+    transform: translate(260px, -1500px);
+
+    animation-name: goldigoinginside2;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(260px, -1500px); */
+@keyframes goldirunningout {
+    0% {
+        opacity: 100;
+    }
+    75% {
+        opacity: 100;
+    }
+    100% {
+        transform: translate(250px, -1750px);
+        opacity: 0;
+    }
+}
+#g6 {
+    width: 150px;
+    height: 200px;
+    transform: translate(700px, -1600px);
+    opacity: 0;
+
+    animation-name: goldirunningout;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+/* transform: translate(700px, -1600px); for at bed */
+.goldilockslaying {
+    width: 200px;
+    height: 150px;
+    background-image: url("goldilocks-laying-down-images-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@keyframes goldilayingdown {
+    50% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#gl1 {
+    transform: translate(500px,-950px);
+    opacity: 0;
+
+    animation-name: goldilayingdown;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+#gl2 {
+    transform: translate(700px,-1050px);
+    opacity: 0;
+
+    animation-name: goldilayingdown;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+@keyframes goldisleeping {
+    100% {
+        opacity: 100;
+    }
+}
+#gl3 {
+    transform: translate(950px,-1150px);
+    opacity: 0;
+
+    animation-name: goldisleeping;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+@keyframes goldilayingfadeout {
+    100% {
+        opacity: 0;
+    }
+}
+#gl4 {
+    transform: translate(950px,-850px);
+    animation-name: goldilayingfadeout;
+    animation-duration: 50ms;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.chairs {
+    width: 400px;
+    height: 400px;
+    background-image: url("chairs-images-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#c1 {
+    transform: translate(300px, 240px);
+}
+.table {
+    width: 300px;
+    height: 300px;
+    background-image: url("round-table-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#t1 {
+    transform: translate(350px, -1050px);
+}
+#t2 {
+    transform: translate(350px, -380px);
+}
+#t3 {
+    transform: translate(350px, -650px);
+}
+.porridge {
+    width: 100px;
+    height: 100px;
+    background-image: url("bowl-of-porridge-istockphoto-1352535875-612x612-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#p1 {
+    transform: translate(350px, -1380px);
+}
+#p2 {
+    transform: translate(450px, -1500px);
+}
+#p3 {
+    transform: translate(550px, -1580px);
+}
+@keyframes drinkporridge1{
+    50% {
+        transform: translate(450px, -810px);
+    }
+    100% {
+        transform: translate(350px, -710px);
+    }
+}
+#p4 {
+    transform: translate(350px, -710px);
+
+    animation-name: drinkporridge1;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.25,.47,.76,.66);
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+/* transform: translate(350px, -710px); */
+@keyframes drinkporridge2 {
+    50% {
+        transform: translate(450px, -910px);
+    }
+    100% {
+        transform: translate(450px, -830px);
+    }
+}
+#p5 {
+    transform: translate(450px, -830px);
+
+    animation-name: drinkporridge2;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.25,.47,.76,.66);
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+/* transform: translate(450px, -830px); */
+@keyframes drinkporridge3 {
+    25% {
+        transform: translate(450px, -1010px);
+    }
+    75% {
+        transform: translate(450px, -1010px);
+    }
+    100% {
+        transform: translate(550px, -910px);
+        background-image: url("bowl-blue-illustration-of-an-empty-plate-for-soup-rice-or-porridge-vector-removebg-preview.png");
+    }
+}
+#p6 {
+    transform: translate(550px, -910px);
+
+    animation-name: drinkporridge3;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.25,.47,.76,.66);
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+/* transform: translate(550px, -910px); */
+#p7 {
+    transform: translate(350px, -980px);
+}
+#p8 {
+    transform: translate(450px, -1100px);
+}
+.emptybowl {
+    width: 100px;
+    height: 100px;
+    background-image: url("bowl-blue-illustration-of-an-empty-plate-for-soup-rice-or-porridge-vector-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#eb2 {
+    transform: translate(550px, -1180px);
+}
+.hardbed {
+    width: 400px;
+    height: 400px;
+    background-image: url("hard-bed-face-right-74f0ac1668ae17c022e274d479c7b923-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#hb1 {
+    transform: translate(400px, 140px);
+}
+.softbed {
+    width: 400px;
+    height: 400px;
+    background-image: url("soft-bed-vector-illustration-600nw-2483680743-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#sb1 {
+    transform: translate(600px, -180px);
+}
+.justrightbed {
+    width: 400px;
+    height: 400px;
+    background-image: url("just-right-bed-face-right-0c8e3dd9f3d63ba67888267a6260b02b_t-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#jb1 {
+    transform: translate(830px, -500px);
+}
+@keyframes exclamationmark {
+    100% {
+        opacity: 100;
+    }
+}
+#exclamation {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 450px;
+    top: 200px;
+    opacity: 0;
+
+    animation-name: exclamationmark;
+    animation-duration: 50ms;
+    animation-timing-function: cubic-bezier(.48,.5,.75,.74);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+#triangle {
+    width: 20px;
+    height: 38px;
+    margin: 2px;
+    background-color: red;
+    clip-path: polygon(25% 0, 13% 100%, 88% 0);
+
+}
+#circle {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    clip-path: circle(50% at 50% 50%);
+}
