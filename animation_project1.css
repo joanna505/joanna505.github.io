@@ -50,6 +50,7 @@
     padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -643,4 +644,5 @@
     height: 10px;
     background-color: red;
     clip-path: circle(50% at 50% 50%);
+
 }
